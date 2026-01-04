@@ -1,0 +1,135 @@
+* {   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../foto/24.jpg") no-repeat center center/cover fixed;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.navbar {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 32px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    box-shadow: 0px 2px red;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: 150px;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.content p {
+    margin: 20px auto; 
+}
+
+.button1, .button2 {
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 35px;
+    margin: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+.button1 {
+    background-color: #F56040;
+    box-shadow: 10px 10px 80px rgb(204, 54, 54);
+}
+
+.button2 {
+    background-color: #0a66c2;
+    box-shadow: 10px 10px 40px rgb(32, 34, 150);
+}
+
+.button1:hover { color: #c13584; }
+.button2:hover { color: rgb(20, 19, 19); }
+
+.form1 { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    gap: 15px;   
+    color: white;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 30px;
+    max-width: 500px;
+}
+
+.formisim, .formsoyisim, .formemail, .formmeslek {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formisim label, .formsoyisim label, .formemail label, .formmeslek label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formisim input, .formsoyisim input, .formemail input, .formmeslek input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    border-top: 1px solid #d4c6c6;
+    margin-top: auto;
+}
